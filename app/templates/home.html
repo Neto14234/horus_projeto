@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horus</title>
+
+     <!-- Icones -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/style.css') }}" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <!-- <a class="logo" href="#">Horus</a> -->
+        <a class = "logo" href="#"> <img src="{{url_for('static', filename='img/logo.svg')}}" alt=""></a>
+        
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="/login">Login</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="{{url_for('static', filename='img/img1.svg')}}" alt="">
+          </div>
+          <div class="text">
+            <h2 class="title">HORUS: Software colaborativo para divulgação de casos de violência</h2>
+            <p>
+              Quer conhecer mais sobre o nosso software?
+            </p>
+            <a class="button" href="/cadastro">Cadastre-se</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="{{url_for('static', filename='img/about.svg')}}" alt="">
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p id="textos">
+              No contexto da sociedade atual, em que é observado um aumento gradativo da violência nos centros urbanos, 
+              este trabalho tem como objetivo desenvolver uma aplicação nativa, para plataformas IOS e Android, 
+              capaz de auxiliar no processo de divulgação dos casos de violência intencional nos centros urbanos. 
+              Isto ocorrerá através da participação ativa da população, com a denúncia dos casos criminosos. 
+              Desta forma, espera-se gerar um conjunto de informações suficientes para situar os cidadãos, 
+              bem como orientar gestores a respeito dos locais e horários de maior incidência de violência.
+            </p>
+            <br />
+            <p id="textos">
+              O pressuposto é de que isso implique em resultados significativos na eficiência de processos logísticos, 
+              bem como na prevenção das ocorrências. Para tanto, o Horus foi planejado para gerar engajamento 
+              entre os tipos de usuários, focando em sua usabilidade, experiência e na credibilidade 
+              pelo combate às Fake News.
+            </p>
+            <br />
+            <p id="textos">
+              Portanto, desenvolveremos uma solução tecnológica colaborativa para divulgar os casos de violência na cidade de Natal (RN), 
+              visando atender, num primeiro momento, as necessidades locais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Princípios</h2>
+            <p class="subtitle">
+              
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="material-icons">groups</i>
+              <h3 class="title">Colaboração</h3>
+              <p id="textos">
+                Nosso software dependerá da colaboração dos usuários com 
+                registros criminais em determinada localidade, sendo possível
+                um mapeamento dos locais mais afetados pela violência.
+              </p>
+            </div>
+            <div class="card">
+              <i class="material-icons">security</i>
+              <h3 class="title">Segurança</h3>
+              <p id="textos">
+                Um dos pilares do nosso projeto é a segurança para com o usuário,
+                que estará assegurado desde o cadastro no aplicativo. Além disso,
+                utilizamos métodos de autenticação que garantam a segurança, e também 
+                o anonimato dos usuários ao registrar um cvli.
+              </p>
+            </div>
+            <div class="card">
+              <i class="material-icons">feed</i>
+              <h3 class="title">Fake News</h3>
+              <p id="textos">
+                Ao registrar um crime, o usuário precisará seguir uma série de etapas
+                para finalizar o processo. Quanto mais informações, mais segura e confiável
+                será aquela notícia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com o HORUS, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://www.whatsapp.com/?lang=pt_br"
+              class="button"
+              target="_blank">
+              <i class="material-icons">whatsapp</i> Entrar em contato</a> 
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="material-icons">phone</i> XX XXXXX-XXXX</li>
+              <li><i class="material-icons">home</i>IFRN Campus Natal Zona-Norte</li>
+              <li><i class="material-icons">email</i> horus@email.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">WebApp<span>Horus</span>.</a>
+          <p>©2022 HORUS</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://virtual.febrace.org.br/2022/EXA/12/" target="_blank">
+            <i class="material-icons">cast_for_education</i>
+          </a>
+          <a href="https://youtu.be/WzwiNIqZrjc" target="_blank">
+            <i class="material-icons">ondemand_video</i></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    ''
+
+    <!-- main.js -->
+    <script src="{{url_for('static', filename='js/main.js')}}></script>
+  </body>
+</html>

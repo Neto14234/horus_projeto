@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body id="cadastro">
+    <div class="container">
+        <div class="title">Cadastro</div>
+        <form action="/cadastro" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome completo</span>
+                    <input name="nome_completo" type="text" placeholder="Coloque seu nome completo" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">CPF</span>
+                    <input name="cpf" type="text" placeholder="Coloque seu CPF" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">E-mail</span>
+                    <input name="email"type="text" placeholder="Coloque seu e-mail" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirmar e-mail</span>
+                    <input name="email2" type="text" placeholder="" required>
+            </div>
+                <div class="input-box">
+                    <span class="details">Senha</span>
+                    <input name="password" type="password" placeholder="Coloque sua senha" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirmar senha</span>
+                    <input name="password2" type="password" placeholder="" required>
+                </div>
+            
+            </div>
+            <div class="button" >
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/validate.js') }}"></script>
+    
+</body>
+</html>
